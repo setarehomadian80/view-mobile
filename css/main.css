@@ -26,7 +26,6 @@ header > div.item1 > h2 {
   font-size: 20px;
   margin-top: 15px;
 }
-
 div.first {
   width: 100%;
 }
@@ -61,7 +60,6 @@ div.container {
   flex-direction: column;
   gap: 20px;
 }
-
 div.data {
   width: 90%;
   margin: 0 auto;
@@ -83,7 +81,6 @@ div.data > p {
   margin-top: 15px;
   text-align: center;
 }
-
 div.contact {
   width: 100%;
   text-align: center;
@@ -159,7 +156,6 @@ footer > div.footer {
     justify-content: center;
     gap: 50px;
   }
-
   div.first {
     width: 100%;
     height: 250px;
@@ -303,7 +299,6 @@ footer > div.footer {
   }
   div.container > div.data {
     flex: 0 0 30%;
-    
   }
   div.container > div.data > img {
     width: 100%;
