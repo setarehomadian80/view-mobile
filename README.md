@@ -1,1 +1,0 @@
-# view-mobile1
