@@ -12,176 +12,78 @@ header > div.item {
   text-align: center;
   padding: 15px;
 }
+header > div.item1 {
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+}
 header > div.item > h1 {
   font-size: 30px;
   font-family: sans-serif;
 }
-header > div.item > h2 {
+header > div.item1 > h2 {
   font-family: sans-serif;
   font-size: 20px;
   margin-top: 15px;
 }
+
 div.first {
   width: 100%;
 }
-div.first > div.data {
+div.first > div.data1 {
   width: 90%;
   margin: 0 auto;
   margin: auto;
   text-align: center;
 }
-div.first > div.data > img {
+div.first > div.data1 > img {
   width: 300px;
   margin-top: 15px;
   padding: 25px;
 }
-div.first > div.data > p {
+div.first > div.data1 > p {
   font-family: sans-serif;
   font-size: 20px;
   margin-top: 10px;
 }
-
-div.second {
+div.forgot {
   width: 100%;
-}
-div.second > div.data {
-  width: 90%;
-  margin: 0 auto;
-  margin: auto;
+  height: 100px;
+  line-height: 100px;
   text-align: center;
-}
-div.second > div.data > img {
-  width: 320px;
-  margin-top: 15px;
-  margin-top: 100px;
-}
-div.second > div.data > h3 {
+  margin-top: 60px;
   font-family: sans-serif;
-  margin-top: 20px;
+  font-weight: bold;
 }
-div.second > div.data > p {
-  font-family: sans-serif;
-  font-size: 20px;
-  margin-top: 15px;
+div.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-div.third {
-  width: 100%;
-}
-div.third > div.data {
+div.data {
   width: 90%;
   margin: 0 auto;
   margin: auto;
   text-align: center;
 }
-div.third > div.data > img {
+div.data > img {
   width: 320px;
   margin-top: 15px;
   margin-top: 100px;
 }
-div.third > div.data > h3 {
+div.data > h3 {
   font-family: sans-serif;
   margin-top: 20px;
 }
-div.third > div.data > p {
+div.data > p {
   font-family: sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   margin-top: 15px;
-}
-div.fourth {
-  width: 100%;
-}
-div.fourth > div.data {
-  width: 90%;
-  margin: 0 auto;
-  margin: auto;
   text-align: center;
-}
-div.fourth > div.data > img {
-  width: 320px;
-  margin-top: 15px;
-  margin-top: 100px;
-}
-div.fourth > div.data > h3 {
-  font-family: sans-serif;
-  margin-top: 20px;
-}
-div.fourth > div.data > p {
-  font-family: sans-serif;
-  font-size: 20px;
-  margin-top: 15px;
 }
 
-div.fifth {
-  width: 100%;
-}
-div.fifth > div.data {
-  width: 90%;
-  margin: 0 auto;
-  margin: auto;
-  text-align: center;
-}
-div.fifth > div.data > img {
-  width: 320px;
-  margin-top: 15px;
-  margin-top: 100px;
-}
-div.fifth > div.data > h3 {
-  font-family: sans-serif;
-  margin-top: 20px;
-}
-div.fifth > div.data > p {
-  font-family: sans-serif;
-  font-size: 20px;
-  margin-top: 15px;
-}
-
-div.sixth {
-  width: 100%;
-}
-div.sixth > div.data {
-  width: 90%;
-  margin: 0 auto;
-  margin: auto;
-  text-align: center;
-}
-div.sixth > div.data > img {
-  width: 320px;
-  margin-top: 15px;
-  margin-top: 100px;
-}
-div.sixth > div.data > h3 {
-  font-family: sans-serif;
-  margin-top: 20px;
-}
-div.sixth > div.data > p {
-  font-family: sans-serif;
-  font-size: 20px;
-  margin-top: 15px;
-}
-div.seventh {
-  width: 100%;
-}
-div.seventh > div.data {
-  width: 90%;
-  margin: 0 auto;
-  margin: auto;
-  text-align: center;
-}
-div.seventh > div.data > img {
-  width: 320px;
-  margin-top: 15px;
-  margin-top: 100px;
-}
-div.seventh > div.data > h3 {
-  font-family: sans-serif;
-  margin-top: 20px;
-}
-div.seventh > div.data > p {
-  font-family: sans-serif;
-  font-size: 20px;
-  margin-top: 15px;
-}
 div.contact {
   width: 100%;
   text-align: center;
@@ -229,10 +131,197 @@ footer > p {
   font-family: sans-serif;
 }
 footer > a {
+  font-size: 20px;
+  margin: 80px 5px 30px 95px;
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+}
+footer > div.footer {
+  display: none;
+}
+@media (min-width: 768px) {
+  header {
+    width: 100%;
+    height: 160px;
+  }
+  header > div.item {
+    margin: auto;
+    height: 80px;
+    line-height: 50px;
+    text-align: center;
+  }
+  header > div.item1 {
+    margin: auto;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  div.first {
+    width: 100%;
+    height: 250px;
+  }
+  div.first > div.data1 {
+    width: 95%;
+    height: inherit;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 15px;
+    gap: 5px;
+  }
+  div.first > div.data1 > img {
+    width: 320px;
+    height: 230px;
+    padding: 25px;
+  }
+  div.first > div.data1 > p {
+    width: 600px;
+    font-family: sans-serif;
+    height: 200px;
+    font-size: 14px;
+    font-weight: bold;
+    word-spacing: 5px;
+    padding: 25px;
+    margin: 15px auto;
+    color: rgb(150, 142, 142);
+    text-align: left;
+    word-spacing: 3px;
+    line-height: 1.5;
+  }
+  div.container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  div.container > div.data {
+    flex: 0 0 48%;
+  }
+  div.container > div.data > img {
+    height: auto;
+    width: 100%;
+  }
+  div.container > div.data > p {
+    text-align: center;
+    margin-top: 10px;
+  }
+  div.container > div.data > h3 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  footer {
+    width: 100%;
+    display: flex;
+    gap: 400px;
+  }
+  footer > p {
     font-size: 20px;
-    margin:80px 5px 30px 95px ;
+    font-family: sans-serif;
+    flex-grow: 1;
+  }
+  footer > a {
+    display: none;
+  }
+  footer > div.footer {
+    display: block;
+    display: flex;
+    flex-grow: 1;
+    gap: 10px;
+  }
+  footer > div.footer > a {
     text-decoration: none;
     color: black;
+    font-size: 15px;
     font-family: sans-serif;
+    margin-top: 80px;
   }
-  
+}
+@media (min-width: 1024px) {
+  header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+  }
+  header > div.item {
+    height: 100px;
+    justify-content: center;
+    text-align: center;
+    margin-left: 10px;
+  }
+  header > div.item1 {
+    height: 100px;
+    text-align: center;
+    gap: 25px;
+    justify-content: center;
+    margin-right: 10px;
+  }
+  header > div.item > h1 {
+    font-size: 25px;
+    font-family: sans-serif;
+    margin-top: 5px;
+  }
+  header > div.item1 > h2 {
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  div.first {
+    width: 100%;
+  }
+  div.first > div.data1 {
+    width: 90%;
+    margin: 0 auto;
+    margin: auto;
+    text-align: center;
+  }
+  div.first > div.data1 > img {
+    width: 400px;
+    height: 250px;
+    margin-top: 10px;
+    padding: 25px;
+  }
+  div.first > div.data1 > p {
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: left;
+    line-height: 1.5;
+  }
+  div.forgot {
+    width: 100%;
+    height: 80px;
+    line-height: 100px;
+    text-align: center;
+    margin-top: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  div.container {
+    justify-content: space-between;
+  }
+  div.container > div.data {
+    flex: 0 0 30%;
+    
+  }
+  div.container > div.data > img {
+    width: 100%;
+    height: auto;
+  }
+  div.container > div.data > h3 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  div.container > div.data > p {
+    text-align: center;
+    margin-top: 10px;
+  }
+  footer > div.footer {
+    display: block;
+    display: flex;
+    flex-grow: 1;
+    gap: 5px;
+    justify-content: space-around;
+  }
+}
